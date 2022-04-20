@@ -8,3 +8,20 @@
 ## transformer
 * 이전 모델은 단어와 단어 사이의 길이가 길어지면 recurrence(순환) 발생
 * Attention으로 대체 -> 연산량 감소
+
+
+#### attention
+* 단어 벡터간에 내적 실행 -> 단어들중에 가장 강한 관계 결정
+
+#### multi-head attention
+* 시퀀스에 대한 보다 광범위하고 철저한 분석   -> ??
+* recurrence 배제에 따른 연산 축소
+* 병렬화 구현 -> 훈련 시간 축소
+* 각 어텐션 메커니즘이 같은 입력 시퀀스에 대해 서로 다른 관점 학습   -> ??
+
+
+#### Encoder
+* multi-head attention, feed forward 2개 존재
+* residual skipping 사용 -> positioning ecoding의 정보가 중간의 손실되지 않게 하려고
+* 
+* 
