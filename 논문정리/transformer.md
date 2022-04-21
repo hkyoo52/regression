@@ -48,7 +48,13 @@ for i in range(1,512,2):
   pc[0][i] = (y[0][i] * math.sqrt(d_model))+p0[0][i]
 ```
 
-12쪽
+(https://colab.research.google.com/github/d2l-ai/d2l-en-colab/blob/master/chapter_attention-mechanisms/self-attention-and-positional-encoding.ipynb)   <- 코드 참조
+
+#### multi head attention
+* 512 차원은 계산하려면 너무 많은 시간이 걸림
+* 8개의 64차원으로 바꿔서 계산 (**8개의 서로 다른 부분 공간**을 얻어서 학습)
+* 
+
 
 
 
