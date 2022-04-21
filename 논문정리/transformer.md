@@ -29,10 +29,26 @@
 * embedding : skip-gram 방식으로 진행 (입력 토큰을 512차원으로 만듬)
 * 코사인 유사도로 embedding된 것들끼리 유사도 구할 수 있음
 
-//9쪽 진행중
+#### Position Encoding
+* 위치를 표현함
+* 학습하지 X (값이 매우 크므로 만약 requires_grad = True로 할 시 학습이 position encoding에 취중)
+* 512차원
+* word embedding의 cos 유사도 > position embedding의 cos 유사도
+
+![image](https://user-images.githubusercontent.com/63588046/164379495-c65c3f99-ed45-4f77-9817-169f5ae74dba.png)
 
 
+#### encoder 입력값
+* 입력 값 = word embedding + position embedding  <= 이런식으로 하면 word embedding이 너무 작음...
+* word embedding = word embedding * math.sqrt(d)로 바꿈 (word_embedding 가중치 곱함)
 
+```python
+for i in range(1,512,2):
+  p0[0][i] = math.sin(pos/(10000**((2*i)/d_model))))
+  pc[0][i] = (y[0][i] * math.sqrt(d_model))+p0[0][i]
+```
+
+12쪽
 
 
 
