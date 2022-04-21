@@ -59,7 +59,7 @@ for i in range(1,512,2):
 
 ![image](https://user-images.githubusercontent.com/63588046/164510272-107db9bc-2551-4901-a5e1-6d2e6bd0b661.png)
 
-
+20페이지 
 softmax한 후 차원을 어떻게 되지??
 다차원에서 softmax는 어떻게 계산되지?
 
