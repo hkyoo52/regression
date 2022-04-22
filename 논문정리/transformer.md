@@ -54,15 +54,24 @@ for i in range(1,512,2):
 * 512 차원은 계산하려면 너무 많은 시간이 걸림
 * 8개의 64차원으로 바꿔서 계산 (**8개의 서로 다른 부분 공간**을 얻어서 학습)
 
-* Ex. 단어의 수가 8개, 단어 차원 512
-* Q,K,V : (8 * 512) * (512 * 64) = 8 * 64
+* Ex. 단어의 수가 3개, 단어 차원 512
+* Q,K,V : (3 * 512) * (512 * 64) = 3 * 64
+* attention : somftmax(3 * 64) = 3 * 64
+* sum of attention : 1 * 64 ?????
+* 이 과정을 8번을 진행 : 3 * 64 8개 만듬
+* concat -> 3*512
 
 ![image](https://user-images.githubusercontent.com/63588046/164510272-107db9bc-2551-4901-a5e1-6d2e6bd0b661.png)
 
-20페이지 
-softmax한 후 차원을 어떻게 되지??
-다차원에서 softmax는 어떻게 계산되지?
+![image](https://user-images.githubusercontent.com/63588046/164585231-a70afcf0-7227-433e-9c08-6b0be5f856cb.png)
+
+
 
 
 ## skip-gram ??
 * word(i)를 학습하려면 word(i-2),word(i-1),word(i+1),word(i+2) 분석
+
+
+## 궁금증
+attention 결과값을 왜 더하지??
+1개의 attention은 그 단어가 다른 단어와의 관계가 있는 것인 그것을 더하면 정보 손실이 될듯 
