@@ -119,7 +119,7 @@ attention 결과값을 왜 더하지??
 
 * 1번 방식이 아닌 **2번 방식**으로 생각해보자
 
-![image](https://user-images.githubusercontent.com/63588046/164758238-c37e29c5-f05c-4717-9a4f-097f4743766c.png)
+![image](https://user-images.githubusercontent.com/63588046/164760332-fd9e5659-f1ba-4cdd-a313-16a5b9c55a62.png)
 
 * 이후 concat도 다양하게 생각하려고 동일한 작업을 8번 해서 합친 것임
 * self-attention 작업 전체가 또하나의 embedding vector를 만드는 작업이라고 본다.
