@@ -73,9 +73,29 @@ for i in range(1,512,2):
 
 ![image](https://user-images.githubusercontent.com/63588046/164589170-ba6eaf8c-0ffa-4d8a-a321-adf2db3392a4.png)
 
-#### Feed-Forward
+#### Feed-Forward Network(FFN)
+* 2개의 layer 포함하며 ReLU 활성화 함수 적용
+* 입력&출력은 512차원이지만 내부 레이어는 2048차원 존재
+* 1 * 1 conv 수행
+
+![image](https://user-images.githubusercontent.com/63588046/164606900-16bb93c1-4808-4d0b-9d1b-9e198922b3cb.png)
 
 
+
+## Decoder
+#### input
+* 마스킹된 word embedding
+* positioning embedding
+
+#### muti-head-attention
+* 2개 존재
+* 첫번째는 masked한 embedding을 input에 넣는 것 외에는 동일
+* 2번째 multi-head-attention은 K,V는 Encoder의 결과값으로부터 얻고 Q는 앞에 multi-head-attention으로부터 얻는다.
+
+#### FFN sublayer & Post-LN
+
+
+![image](https://user-images.githubusercontent.com/63588046/164610776-b53d5109-c343-4000-89cb-dcc12919ef27.png)
 
 
 ## skip-gram ??
