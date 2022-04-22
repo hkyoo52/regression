@@ -105,3 +105,5 @@ for i in range(1,512,2):
 ## 궁금증
 attention 결과값을 왜 더하지??
 1개의 attention은 그 단어가 다른 단어와의 관계가 있는 것인 그것을 더하면 정보 손실이 될듯 
+
+왜!!! V의 row space가 아니라 column space로 내적을 하는거지?? 말도 안되!!!!!!ㅡㅡ
