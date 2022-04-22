@@ -117,6 +117,6 @@ attention 결과값을 왜 더하지??
 
 * 1번 방식이 아닌 **2번 방식**으로 생각해보자
 
-![image](https://user-images.githubusercontent.com/63588046/164755519-cb0e114f-bafe-4414-bb90-c917dd4e2caf.png)
+![image](https://user-images.githubusercontent.com/63588046/164757407-9d285ba5-c917-4425-9c1d-8a8506794d0b.png)
 
 
