@@ -65,6 +65,16 @@ for i in range(1,512,2):
 
 ![image](https://user-images.githubusercontent.com/63588046/164585231-a70afcf0-7227-433e-9c08-6b0be5f856cb.png)
 
+#### Post Layer Normalization
+* 중요한 정보가 손실되지 않도록 잔차 연결 진행
+* x: 3 * 512, sublayer(x) : 3 * 512
+* u, o : 3 * 1
+* LayerNorm(v) : 3 * 512
+
+![image](https://user-images.githubusercontent.com/63588046/164589170-ba6eaf8c-0ffa-4d8a-a321-adf2db3392a4.png)
+
+#### Feed-Forward
+
 
 
 
