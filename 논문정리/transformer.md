@@ -106,10 +106,17 @@ for i in range(1,512,2):
 attention 결과값을 왜 더하지??
 1개의 attention은 그 단어가 다른 단어와의 관계가 있는 것인 그것을 더하면 정보 손실이 될듯 
 
-왜!!! V의 row space가 아니라 column space로 내적을 하는거지?? 말도 안되!!!!!!ㅡㅡ
-
-
 #### 왜 Value를 구할까?
 * softmax(QK^T)는 유사도의 확률을 의미함
 * 즉 원래 단어가 가지고 있는 정보량이 없어짐...
 * 그러면 Value를 통해 정보량을 제공해줌... 근데 왜 V의 column vector로??
+
+#### 왜 value의 row vector로 내적을 하는 거지 (column vector가 아니라...??)
+
+![image](https://user-images.githubusercontent.com/63588046/164757173-7b570efb-9d5d-43b0-8e6b-f0cb5257be31.png)
+
+* 1번 방식이 아닌 **2번 방식**으로 생각해보자
+
+![image](https://user-images.githubusercontent.com/63588046/164755519-cb0e114f-bafe-4414-bb90-c917dd4e2caf.png)
+
+
