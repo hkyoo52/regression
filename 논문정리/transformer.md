@@ -113,10 +113,13 @@ attention 결과값을 왜 더하지??
 
 #### 왜 value의 row vector로 내적을 하는 거지 (column vector가 아니라...??)
 
+<아래는 나의 개인적인 생각임... 절대 정답 X>
+
 ![image](https://user-images.githubusercontent.com/63588046/164757173-7b570efb-9d5d-43b0-8e6b-f0cb5257be31.png)
 
 * 1번 방식이 아닌 **2번 방식**으로 생각해보자
 
 ![image](https://user-images.githubusercontent.com/63588046/164758238-c37e29c5-f05c-4717-9a4f-097f4743766c.png)
 
-
+* 이후 concat도 다양하게 생각하려고 동일한 작업을 8번 해서 합친 것임
+* self-attention 작업 전체가 또하나의 embedding vector를 만드는 작업이라고 본다.
