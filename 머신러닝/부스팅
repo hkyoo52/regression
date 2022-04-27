@@ -37,7 +37,8 @@
 
 
 # Gradient Boosting이란
-
+* Adaboost처럼 stamp 구조의 반복이 아닌 tree 형식으로 되어 있음
+* leaf의 값을 residual * learning rate로 점차 바꿈
 
 
 
