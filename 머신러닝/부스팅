@@ -1,12 +1,9 @@
-## AdaBoost란?
+# AdaBoost란?
 * Boost : 약한 모델을 sequence하게 쌓아서 강한 모델을 만든다.
 * AdaBosst : 약한 모델을 **Tree**구조로 만들어서(Sequence) 잘못 계산한 곳에 **가중치**를 부여하여 학습
 
 
-
-
-
-#### 지니계수 구하는 방법
+### 지니계수 구하는 방법
 * 각 값을 크기순대로 정렬
 * 값과 값 사이에 평균값을 넣음
 
@@ -16,17 +13,17 @@
 
 
 
-#### 지니계수를 가지고 분기점 결정하기
+### 지니계수를 가지고 분기점 결정하기
 
 ![image](https://user-images.githubusercontent.com/63588046/165345126-f5753ebc-8703-4082-8b1a-0a7a66465e4e.png)
 
-#### Amount of Say
+### Amount of Say
 *  최종 분류에 있어서 해당 Stump가 얼마만큼의 영향을 주는가
 
 ![image](https://user-images.githubusercontent.com/63588046/165345929-d5be8b7e-38cf-4adc-9921-2b31b2b053fd.png)
 
 
-#### 가중치 공식
+### 가중치 공식
 
 * 잘 분류한 것 => 값이 작아짐
 ![image](https://user-images.githubusercontent.com/63588046/165346178-e1c157bd-0f96-45e5-bbc7-caa751526ff4.png)
@@ -37,9 +34,19 @@
 * 마지막에는 전체 값의 합이 1이 되도록 scaling 진행
 
 
+
+
+# Gradient Boosting이란
+
+
+
+
+
+
+
 #### 참고 자료
 * Adaboot : https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-14-AdaBoost?category=1057680
 * GradientBoost : https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-15-Gradient-Boost
 
-## Gradient Boosting이란
+
 
