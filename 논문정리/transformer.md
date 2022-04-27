@@ -99,7 +99,12 @@ for i in range(1,512,2):
 
 
 ## skip-gram ??
-* word(i)를 학습하려면 word(i-2),word(i-1),word(i+1),word(i+2) 분석
+* word(i)를 학습하려면 문장에 있는 모든 단어 word(i-2),word(i-1),word(i+1),word(i+2) 분석
+* 모든 word를 one-hot encoding 진행 -> y(1),y(2),,,,
+* word(i)를 가중치를 곱해서 embedding vector 생성
+* embedding vector에서 가중치를 곱해서 score vector 생성
+* score vector를 softmax 취해서 확률 값을 나오게 함 => y'(i)
+* y(i)와 y'(i) 로 loss값 구함
 
 
 ## 궁금증
