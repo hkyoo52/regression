@@ -73,6 +73,12 @@ for i in range(1,512,2):
 
 ![image](https://user-images.githubusercontent.com/63588046/164589170-ba6eaf8c-0ffa-4d8a-a321-adf2db3392a4.png)
 
+* BatchNorm : 한개의 batch에 있는 모든 sample의 각 feature의 평균과 분산으로 정규화
+* layerNorm : 각 sample에 모든 feature들의 평균과 분산으로 정규화
+
+![image](https://user-images.githubusercontent.com/63588046/165508669-0713faa2-e1c9-4629-b9aa-d4777ffcefb8.png)
+
+
 #### Feed-Forward Network(FFN)
 * 2개의 layer 포함하며 ReLU 활성화 함수 적용
 * 입력&출력은 512차원이지만 내부 레이어는 2048차원 존재
