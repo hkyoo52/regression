@@ -78,6 +78,8 @@ for i in range(1,512,2):
 
 ![image](https://user-images.githubusercontent.com/63588046/165508669-0713faa2-e1c9-4629-b9aa-d4777ffcefb8.png)
 
+![image](https://user-images.githubusercontent.com/63588046/165727963-38793965-9563-4f96-9898-acae5ad5836b.png)
+
 
 #### Feed-Forward Network(FFN)
 * 2개의 layer 포함하며 ReLU 활성화 함수 적용
