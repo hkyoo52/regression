@@ -94,6 +94,7 @@ for i in range(1,512,2):
 #### input
 * 마스킹된 word embedding
 * positioning embedding
+* decoder의 input은 번역한 값 (decoder의 정답값은 번역한 값을 한칸씩 미룬것)
 
 #### muti-head-attention
 * 2개 존재
@@ -106,7 +107,7 @@ for i in range(1,512,2):
 ![image](https://user-images.githubusercontent.com/63588046/164610776-b53d5109-c343-4000-89cb-dcc12919ef27.png)
 
 
-## skip-gram ??
+## skip-gram
 * word(i)를 학습하려면 문장에 있는 모든 단어 word(i-2),word(i-1),word(i+1),word(i+2) 분석
 * 모든 word를 one-hot encoding 진행 -> y(1),y(2),,,,
 * word(i)를 가중치를 곱해서 embedding vector 생성
