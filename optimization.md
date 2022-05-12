@@ -40,13 +40,20 @@
 
 ![image](https://user-images.githubusercontent.com/63588046/167976918-1f6a0d97-e9e8-4240-b035-aebfadd818f3.png)
 
-* 기울기가 가파르다는 것은 그 부분을 학습을 안했다는 의미이다.
-* 기울기가 가파를수록
+* 학습을 할때마다 계속 기울기를 더한다.
+* 제곱을 더하므로 계속 커진다
+* 학습을 많이 하면 h가 지속적으로 계속 커질것이다.
 
 
+## RMSProp
 
+![image](https://user-images.githubusercontent.com/63588046/167995685-57aec0d1-792c-4c06-946a-93896e99e672.png)
 
+* 무작정 h값이 커지는 방식이 아닌 일부를 줄이면서 더함
 
+## Adam
 
+![image](https://user-images.githubusercontent.com/63588046/167995805-733fb522-e615-4ca9-857b-0864cf7ce325.png)
 
+![image](https://user-images.githubusercontent.com/63588046/167995853-41f98c68-6742-430a-9c75-eb390dfceadf.png)
 
