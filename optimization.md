@@ -57,3 +57,10 @@
 
 ![image](https://user-images.githubusercontent.com/63588046/167995853-41f98c68-6742-430a-9c75-eb390dfceadf.png)
 
+* m : 모멘텀 식 (약간 수정)
+* v : rmsprop 식
+
+![image](https://user-images.githubusercontent.com/63588046/168034449-7f3a1809-759c-4f83-8af7-9c751c473b9c.png)
+
+* 불편추정치 : 편향이 0인 추정치
+
