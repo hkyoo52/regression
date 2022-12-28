@@ -76,6 +76,9 @@ for i in range(1,512,2):
 * BatchNorm : 한개의 batch에 있는 모든 sample의 각 feature의 평균과 분산으로 정규화
 * layerNorm : 각 sample에 모든 feature들의 평균과 분산으로 정규화
 
+![image](https://user-images.githubusercontent.com/63588046/209760260-342e8d62-0bc6-4e94-85a4-eed32ec82c5f.png)
+
+
 ![image](https://user-images.githubusercontent.com/63588046/165508669-0713faa2-e1c9-4629-b9aa-d4777ffcefb8.png)
 
 ![image](https://user-images.githubusercontent.com/63588046/165727963-38793965-9563-4f96-9898-acae5ad5836b.png)
